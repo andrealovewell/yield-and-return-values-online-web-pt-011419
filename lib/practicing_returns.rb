@@ -1,5 +1,5 @@
 
-hello(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
+requires 'pry'
 
 def hello(array)
   i = 0
@@ -8,6 +8,6 @@ def hello(array)
     i += 1
   end
 end
-
-
+binding.pry
+hello(["Tim", "Tom", "Jim"]) { |name| puts "Hi, #{name}" }
 
